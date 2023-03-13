@@ -8,6 +8,10 @@
     --gris: #EAEBEB;
 }
 
+* {
+    font-family: 'Lato';
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -81,4 +85,48 @@ body {
     border-radius: 10px;
     text-align: center;
     height: 40%;
+}
+
+.abo_title {
+    width: 100%;
+    text-align: center  ;
+}
+
+.abonnements_section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.abo_div {
+    border: 1px solid black;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.abo_div p {
+    position: relative;
+    bottom: 4px;
+}
+
+.top {
+    position: relative;
+    bottom: 10px !important;
+}
+
+.grid {
+    position: absolute;
+    margin-top: 60px;
+    height: 150px;
+    width: 310px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.name_sub {
+    background-color: var(--secondary);
+    color: white;
 }
