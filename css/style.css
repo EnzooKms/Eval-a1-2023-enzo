@@ -192,11 +192,51 @@ body {
     background-image: url("https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=936&q=80");
   
     /* Set a specific height */
-    min-height: 50px;
+    min-height: 200px;
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+.blog_section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.blog_section h1 {
+    position: relative;
+    left: 43%;
+}
+
+.blog {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    top: 100px;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.blog-image {
+    width: 100%;
+    height: 33%;
+}
+
+.title-blog {
+    text-align: center;
+}
+
+.content-blog {
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    bottom: 20px;
+}
+
+.margin {
+    margin-top: 30px;
+}
