@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+:root {
+    --primary: #2D3142;
+    --secondary: #4F5D75;
+    --rose: #EF8354;
+    --gris: #EAEBEB;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    background-color: var(--primary);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.restoName_section {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    height: 100%;
+    width: 50%;
+}
+
+.restoName {
+    color: white;
+    font-family: 'Righteous', cursive;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.restoName::before {
+    content: '«';
+    color: var(--rose);
+}
+
+.restoName::after {
+    content: '»';
+    color: var(--rose);
+}
+
+.navbar_ul {
+    margin-top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.navbar_li {
+    list-style: none;
+    color: white;
+    font-size: 13px;
+}
+
+.darkIcon {
+    margin-top: 30px;
+    position: relative;
+    right: 7.5%;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    height: 40%;
+}
