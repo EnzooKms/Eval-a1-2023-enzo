@@ -1,4 +1,5 @@
 const carte_section = document.getElementById('carte')
+const darkIcon = document.getElementsByClassName('darkIcon')[0]
  console.log(carte_section);
 const data = [
     {
@@ -57,3 +58,17 @@ for(let i = 0; i < data.length; i++) {
     section.appendChild(image)
     carte_section.appendChild(section)
 }
+
+darkIcon.addEventListener('click', () => {
+    document.body.innerHTML = ''
+
+    const section = document.createElement('section')
+    section.classList.add('egg')
+
+    const h1 = document.createElement('h1')
+    h1.classList.add('h1_egg')
+    h1.innerText = 'C\'EST UNE BLAGUE... RECHARGEZ LA PAGE !'
+
+    section.appendChild(h1)
+    document.body.appendChild(section)
+})
