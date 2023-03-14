@@ -240,3 +240,21 @@ body {
 .margin {
     margin-top: 30px;
 }
+
+@media screen and (min-width: 680px) {
+    .header {
+        flex-direction: unset;
+    }
+
+    .navbar_ul {
+        display: block;
+    }
+
+    .navbar ul li {
+     float: left; 
+     width: 100px; 
+     text-align: center;
+     position: relative;
+     top: 45%;
+    }
+}
