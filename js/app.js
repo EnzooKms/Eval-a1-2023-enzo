@@ -1,6 +1,11 @@
 const carte_section = document.getElementById('carte')
 const darkIcon = document.getElementsByClassName('darkIcon')[0]
- console.log(carte_section);
+const submit = document.getElementById('submit')
+const named = document.getElementById('name')
+const mail = document.getElementById('mail')
+const message = document.getElementById('message')
+const crypt = document.getElementById('crypt')
+
 const data = [
     {
         imgSrc: 'https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
@@ -71,4 +76,23 @@ darkIcon.addEventListener('click', () => {
 
     section.appendChild(h1)
     document.body.appendChild(section)
+})
+
+submit.addEventListener('click', e => {
+    e.preventDefault()
+
+    if(mail.value === '' || named.value === '' ) {
+        alert('not good')
+    }
+    else {
+        mail.value = ''
+        named.value = ''
+        message.value = ''
+        crypt.value = ''
+
+    }
+})
+
+message.addEventListener('input', () => {
+    crypt.value = message.value
 })
