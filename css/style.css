@@ -13,6 +13,7 @@
 }
 
 body {
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -25,6 +26,7 @@ body {
     height: 100px;
     display: flex;
     flex-direction: row;
+    overflow-x: hidden;
 }
 
 .uppercase {
@@ -42,6 +44,7 @@ body {
 .navbar {
     height: 100%;
     width: 50%;
+    overflow-x: hidden;
 }
 
 .restoName {
@@ -89,7 +92,7 @@ body {
 
 .abo_title {
     width: 100%;
-    text-align: center  ;
+    text-align: center;
 }
 
 .abonnements_section {
@@ -316,4 +319,103 @@ body {
     font-weight: bold;
     text-align: center;
     color: white;
+}
+
+.footer {
+    position: relative;
+    top: 20%;
+    height: 110vh;
+    width: 100vw;
+    color: white;
+    background-color: var(--secondary);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer h1 {
+    width: 100%;
+    font-size: 20px;
+}
+
+.details {
+    font-size: 12px;
+}
+
+.details a {
+    color: orangered;
+}
+
+.footer h2 {
+    width: 100%;
+    font-size: 15px;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.age_div {
+    position: relative;
+    border: 1px solid white;
+    width: 70%;
+    height: 6%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ageQuestion {
+    bottom: 40%;
+    left: 1%;
+    position: absolute;
+    font-weight: bold;
+}
+
+.mail_div {
+    position: absolute;
+    top: 25%;
+}
+
+input[type='text'] {
+    border-radius: 10px;
+    height: 30px;
+    margin-top: 15px;
+}
+
+input[type='password'] {
+    border-radius: 10px;
+    height: 30px;
+}
+
+.game_div {
+    position: absolute;
+    top: 40%;
+}
+
+select {
+    border-radius: 10px;
+    height: 30px;
+    margin-top: 15px;
+}
+
+.message {
+    position: absolute;
+    top: 60%;
+}
+
+textarea {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#submit {
+    background-color: var(--primary);
+    margin-top: 15px;
+    height: 40px;
+    border-radius: 10px;
 }
